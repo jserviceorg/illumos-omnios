@@ -78,6 +78,8 @@ elif [[ -f $ZONEROOT/etc/lsb-release ]]; then
 	fi
 elif [[ -f $ZONEROOT/etc/debian_version ]]; then
 	distro="debian"
+elif [[ -f $ZONEROOT/etc/devuan_version ]]; then
+	distro="devuan"
 elif [[ -f $ZONEROOT/etc/alpine-release ]]; then
 	distro="busybox"
 fi
